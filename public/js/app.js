@@ -13,7 +13,7 @@ weatherForm.addEventListener("submit", (e) => {
   const location = search.value;
 
   // Fetching Weather-data from our own API Endpoint
-  fetch(`http://localhost:3000/weather?address=${encodeURIComponent(location)}`)
+  fetch(`/weather?address=${encodeURIComponent(location)}`)
     .then((response) => {
       return response.json();
     })
